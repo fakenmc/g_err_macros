@@ -26,12 +26,23 @@
  *
  * Tests for the error-handling macros for applications using Glib.
  *
+ * Building the tests executable (requires CMake, Glib and a C compiler):
+ *
+ *    1. Create a build folder (e.g. mkdir build)
+ *    2. CD into the build folder (e.g. cd build) and run CMake (e.g. cmake ..)
+ *    3. Compile the tests file (e.g. make)
+ *
+ * Performing the tests (two options):
+ *
+ *    1. Run the tests executable directly (e.g. ./tests)
+ *    2. Run the tests with gtester (e.g. gtester tests)
+ *
  * @author Nuno Fachada
  * @date 2017
  * @copyright [The MIT License (MIT)](https://opensource.org/licenses/MIT)
  * */
 
-#include "../_g_err_macros.h"
+#include "_g_err_macros.h"
 
 /** Resolves to error category identifying string, in this case an error
  * in the GErrorf tests. */
